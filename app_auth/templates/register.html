@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>connexion</title>
+  
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  
+    <title>connexion</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style_register.css' %}">
+    
+</head>
+<body>
+    
+    
+    <form action="" method="POST">{% csrf_token %}
+        
+        <h3>enregistrement</h3>
+
+        {{ form}}
+
+        <button>s'enregistrer</button>
+        <div class="social">
+            <div class="go"><i class="fab fa-google"></i> rafrechire</div>
+            <div class="fb"><i class="fab fa-facebook"></i> <a href=" {% url 'register_blog' %}">se connecter</a></div>
+        </div>
+        {% if messages %}
+            {% for message in messages %}
+            <h2 style="text-align: center;padding: 10px;color: red;"> {{message}} </h2> 
+            {% endfor %}
+        {% endif%}
+          
+    </form>
+</body>
+</html>
+

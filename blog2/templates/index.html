@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+ {%load static%}
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CAMPUS12</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+  {% include 'nav.html'%}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(media/recherche.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">bienvenue chez <span>CAMPUS12</span></h2>
+              <p class="animate__animated animate__fadeInUp">le meilleurs site vous permettant de preparer vos differnt concours et obtenir la reussite que vous meritez et cela quelques soit le concours dans tout le territoire camerounais sans exeption</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">lire plus</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(media/cours1.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">le meilleur site pour reussir</h2>
+              <p class="animate__animated animate__fadeInUp">decouvrer une grande varite ordonne de sujet , de correction et des arretes des differnt concours present et future dans le territoire camerounais </p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">lire plus</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(media/fond.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">cours de preparation disponible</h2>
+              <p class="animate__animated animate__fadeInUp">obtener des cours de preparation et des des borsds sur ce site pour qui vous permettrons d'abborder tout type de concours et reussire au concours de votre choix</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">lire plus</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    
+    <section id="featured-services" class="featured-services section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-laptop"></i></div>
+              <h4 class="title"><a href="">Cours </a></h4>
+              <p class="description">vener a la decouver des cours gratuit references par categorie vous permettant de mieux apprehender les sujet </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">eupreuves des concours</a></h4>
+              <p class="description">dans ce site nous disposons de sujets de tout les concours existant au cameroun pour votre plaisir</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">correction</a></h4>
+              <p class="description">obtener tout les corrections des differnts sujets des concours dans le territoire</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">Arrete</a></h4>
+              <p class="description">ici sont disponible les arretes des concours, qui sont mis a jour reguliere que a fin que vous ne manquez rien</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">obtenir un bord</a></h4>
+              <p class="description">obtenir les suport physiques des bords des concours et profiter au maximum des connaissances</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">cours de soutient</a></h4>
+              <p class="description">vous avez des dificulter? vous voulez etre plus competitif ? suiver des cours de soutient</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>contenu populaire</h2>
+        </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="media/Images_Ecoles/ens_y.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="media/Images_Ecoles/enset_d.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="media/Images_Ecoles/ensp_d.png" class="img-fluid" alt=""></div>
+            
+            <div class="swiper-slide"><img src="media/Images_Ecoles/ensp_y.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="media/Images_Ecoles/fmsb_g.jpeg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="media/Images_Ecoles/iut_d.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="media/Images_Ecoles/iut_bd.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="media/Images_Ecoles/iut_ng.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="media/Images_Ecoles/ens_y.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="section-title">
+        <h2> les epreuves les plus demande et recommande</h2>
+        <p>nos vous proposons un eventaille complet d'epreuves et d'exercice de type concours et examen puis sourtout de corection. ici sont affiche les plus demande en matiere d'epreuve de concours pour territoire camerounais uniquement allnt de premiere annee a troisieme annee</p>
+        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">lire plus</a>
+      </div>
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span >ENSP DOUALA</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>ENSP YAOUNDE</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>IUT DOUALA</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>ENSET EBOLOWA</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>ENSP MAROUA</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>IUT FOTSO VICTOR</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+          </div>
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>IUT GAROUNDERE </span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p><br>
+          </div>
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>FMSP DOUALA</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+          </div>
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>ENSET DOUALA</span><br>
+            <p>epreuve d'enspd 2023</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>epreuve d'enspd 2021</p>
+            <p>...</p>
+            <a href="#about">voire plus</a>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>si vous avez des question a nous poser, des suggestion a nous faires nexiter pas. quelques soit vos question nous les repondrons. quelquessoit vos critiques nous les examinerons et les prendrons en compte pour votre bien etre .</p>
+        </div>
+
+        <div class="row" style="justify-content: center;">
+
+          
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Votre nom</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">votre e-mail</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Sujet</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">en cours</div>
+                <div class="error-message"></div>
+                <div class="sent-message">votre message a ete envoye. merci!</div>
+              </div>
+              <div class="text-center"><button type="submit">envoyer le message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>action de grace</h3>
+              <p> faites un don a la communaute pour encourager a toujours vous founir du contenue gratuitement qui vous permettrons certement reussir dans les differents concours de votre choix dans tout le territoire.</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">faire le don</a>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Cta Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>CAMPUS12</h3>
+      <p>nous sommes une communote qui peremt a atout ceux qui le veulent,de prendre leurs marques et offronter les differents concours:contacter nous en cas de besoin.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>CAMPUS12</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
